@@ -122,3 +122,61 @@
  * Running on http://127.0.0.1:5000
 2024-03-20 20:29:33,305 - INFO - [33mPress CTRL+C to quit[0m
 2024-03-20 20:29:43,879 - INFO - 127.0.0.1 - - [20/Mar/2024 20:29:43] "GET /set HTTP/1.1" 200 -
+2024-03-20 20:38:02,319 - INFO - START SYSTEM
+2024-03-20 20:38:02,319 - INFO - App service started
+2024-03-20 20:38:03,632 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:38:03,642 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:38:08,201 - INFO - 127.0.0.1 - - [20/Mar/2024 20:38:08] "GET /set HTTP/1.1" 200 -
+2024-03-20 20:39:03,197 - INFO - START SYSTEM
+2024-03-20 20:39:03,197 - INFO - App service started
+2024-03-20 20:39:04,383 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:39:04,394 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:39:05,622 - INFO - 127.0.0.1 - - [20/Mar/2024 20:39:05] "GET /set HTTP/1.1" 200 -
+2024-03-20 20:39:52,840 - INFO - START SYSTEM
+2024-03-20 20:39:52,840 - INFO - App service started
+2024-03-20 20:39:54,057 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:39:54,067 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:39:57,663 - INFO - 127.0.0.1 - - [20/Mar/2024 20:39:57] "[31m[1mPOST /set HTTP/1.1[0m" 405 -
+2024-03-20 20:40:09,481 - INFO - 127.0.0.1 - - [20/Mar/2024 20:40:09] "[35m[1mPUT /set HTTP/1.1[0m" 500 -
+2024-03-20 20:40:31,314 - INFO - START SYSTEM
+2024-03-20 20:40:31,314 - INFO - App service started
+2024-03-20 20:40:44,340 - INFO - START SYSTEM
+2024-03-20 20:40:44,341 - INFO - App service started
+2024-03-20 20:40:57,908 - INFO - START SYSTEM
+2024-03-20 20:40:57,909 - INFO - App service started
+2024-03-20 20:40:59,131 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:40:59,141 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:41:03,521 - INFO - 127.0.0.1 - - [20/Mar/2024 20:41:03] "[35m[1mPUT /set HTTP/1.1[0m" 500 -
+2024-03-20 20:41:48,871 - INFO - START SYSTEM
+2024-03-20 20:41:48,872 - INFO - App service started
+2024-03-20 20:41:50,190 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:41:50,200 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:41:52,506 - INFO - 127.0.0.1 - - [20/Mar/2024 20:41:52] "PUT /set HTTP/1.1" 200 -
+2024-03-20 20:42:38,482 - INFO - 127.0.0.1 - - [20/Mar/2024 20:42:38] "GET /set HTTP/1.1" 200 -
+2024-03-20 20:45:17,672 - INFO - START SYSTEM
+2024-03-20 20:45:17,673 - INFO - App service started
+2024-03-20 20:45:18,925 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:45:18,935 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:45:21,891 - INFO - Save new plate list: ['ABC123', 'XYZ789', 'DEF456']
+2024-03-20 20:45:21,902 - INFO - 127.0.0.1 - - [20/Mar/2024 20:45:21] "PUT /set HTTP/1.1" 200 -
+2024-03-20 20:45:26,954 - INFO - Get plate list : []
+2024-03-20 20:45:26,964 - INFO - 127.0.0.1 - - [20/Mar/2024 20:45:26] "GET /set HTTP/1.1" 200 -
+2024-03-20 20:46:06,249 - INFO - START SYSTEM
+2024-03-20 20:46:06,249 - INFO - App service started
+2024-03-20 20:46:07,522 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:46:07,532 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:46:10,086 - INFO - Save new plate list: ['ABC123', 'XYZ789', 'DEF456']
+2024-03-20 20:46:10,097 - INFO - 127.0.0.1 - - [20/Mar/2024 20:46:10] "PUT /set HTTP/1.1" 200 -
+2024-03-20 20:46:12,740 - INFO - Get plate list : ['ABC123', 'XYZ789', 'DEF456']
+2024-03-20 20:46:12,750 - INFO - 127.0.0.1 - - [20/Mar/2024 20:46:12] "GET /set HTTP/1.1" 200 -
+2024-03-20 20:46:32,046 - INFO - Save new plate list: ['XYZ789', 'DEF456']
+2024-03-20 20:46:32,057 - INFO - 127.0.0.1 - - [20/Mar/2024 20:46:32] "PUT /set HTTP/1.1" 200 -
+2024-03-20 20:46:34,564 - INFO - Get plate list : ['XYZ789', 'DEF456']
+2024-03-20 20:46:34,575 - INFO - 127.0.0.1 - - [20/Mar/2024 20:46:34] "GET /set HTTP/1.1" 200 -
