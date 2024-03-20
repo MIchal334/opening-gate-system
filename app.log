@@ -4,3 +4,121 @@
 2024-03-20 19:02:48,137 - INFO - START SYSTEM
 2024-03-20 19:15:41,785 - INFO - START SYSTEM
 2024-03-20 19:21:57,689 - INFO - START SYSTEM
+2024-03-20 19:46:18,349 - INFO - START SYSTEM
+2024-03-20 20:04:37,709 - INFO - START SYSTEM
+2024-03-20 20:07:28,203 - INFO - START SYSTEM
+2024-03-20 20:08:04,741 - INFO - START SYSTEM
+2024-03-20 20:08:04,746 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:08:04,746 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:08:04,747 - INFO -  * Restarting with stat
+2024-03-20 20:08:04,846 - INFO - START SYSTEM
+2024-03-20 20:08:04,849 - WARNING -  * Debugger is active!
+2024-03-20 20:08:04,890 - INFO -  * Debugger PIN: 478-796-122
+2024-03-20 20:08:53,232 - INFO -  * Detected change in '/home/michal/Desktop/otwiernie_bramy/opening-gate-system/adapters/inbound/controller.py', reloading
+2024-03-20 20:08:53,247 - INFO -  * Restarting with stat
+2024-03-20 20:08:53,348 - INFO - START SYSTEM
+2024-03-20 20:08:53,351 - WARNING -  * Debugger is active!
+2024-03-20 20:08:53,351 - INFO -  * Debugger PIN: 478-796-122
+2024-03-20 20:08:55,176 - INFO - App service started
+2024-03-20 20:08:55,207 - INFO - App service started
+2024-03-20 20:08:56,243 - INFO - START SYSTEM
+2024-03-20 20:08:56,246 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:08:56,247 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:08:56,247 - INFO -  * Restarting with stat
+2024-03-20 20:08:56,347 - INFO - START SYSTEM
+2024-03-20 20:08:56,350 - WARNING -  * Debugger is active!
+2024-03-20 20:08:56,350 - INFO -  * Debugger PIN: 478-796-122
+2024-03-20 20:09:35,604 - INFO - App service started
+2024-03-20 20:09:35,635 - INFO - App service started
+2024-03-20 20:11:09,600 - INFO - START SYSTEM
+2024-03-20 20:11:09,604 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:11:09,604 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:11:09,604 - INFO -  * Restarting with stat
+2024-03-20 20:11:09,704 - INFO - START SYSTEM
+2024-03-20 20:11:09,706 - WARNING -  * Debugger is active!
+2024-03-20 20:11:09,706 - INFO -  * Debugger PIN: 478-796-122
+2024-03-20 20:11:35,282 - INFO - App service started
+2024-03-20 20:11:35,314 - INFO - App service started
+2024-03-20 20:14:29,873 - INFO - START SYSTEM
+2024-03-20 20:14:29,877 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:14:29,877 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:14:29,877 - INFO -  * Restarting with stat
+2024-03-20 20:14:29,978 - INFO - START SYSTEM
+2024-03-20 20:14:29,980 - WARNING -  * Debugger is active!
+2024-03-20 20:14:29,981 - INFO -  * Debugger PIN: 478-796-122
+2024-03-20 20:14:53,012 - INFO - App service started
+2024-03-20 20:14:53,043 - INFO - App service started
+2024-03-20 20:15:02,026 - INFO - START SYSTEM
+2024-03-20 20:15:02,030 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:15:02,030 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:15:02,030 - INFO -  * Restarting with stat
+2024-03-20 20:15:02,130 - INFO - START SYSTEM
+2024-03-20 20:15:02,132 - WARNING -  * Debugger is active!
+2024-03-20 20:15:02,133 - INFO -  * Debugger PIN: 478-796-122
+2024-03-20 20:15:03,835 - INFO - App service started
+2024-03-20 20:15:03,866 - INFO - App service started
+2024-03-20 20:16:11,370 - INFO - START SYSTEM
+2024-03-20 20:16:11,374 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:16:11,374 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:16:11,374 - INFO -  * Restarting with stat
+2024-03-20 20:16:11,472 - INFO - START SYSTEM
+2024-03-20 20:16:11,474 - WARNING -  * Debugger is active!
+2024-03-20 20:16:11,475 - INFO -  * Debugger PIN: 478-796-122
+2024-03-20 20:16:14,669 - INFO - App service started
+2024-03-20 20:16:14,732 - INFO - App service started
+2024-03-20 20:16:23,230 - INFO - START SYSTEM
+2024-03-20 20:16:23,234 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:16:23,234 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:16:23,235 - INFO -  * Restarting with stat
+2024-03-20 20:16:23,334 - INFO - START SYSTEM
+2024-03-20 20:16:23,336 - WARNING -  * Debugger is active!
+2024-03-20 20:16:23,337 - INFO -  * Debugger PIN: 478-796-122
+2024-03-20 20:16:34,285 - INFO - App service started
+2024-03-20 20:16:34,317 - INFO - App service started
+2024-03-20 20:16:38,910 - INFO - START SYSTEM
+2024-03-20 20:16:38,914 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:16:38,914 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:16:38,914 - INFO -  * Restarting with stat
+2024-03-20 20:16:39,013 - INFO - START SYSTEM
+2024-03-20 20:16:39,015 - WARNING -  * Debugger is active!
+2024-03-20 20:16:39,015 - INFO -  * Debugger PIN: 478-796-122
+2024-03-20 20:16:40,023 - INFO - App service started
+2024-03-20 20:16:40,054 - INFO - App service started
+2024-03-20 20:22:07,977 - INFO - START SYSTEM
+2024-03-20 20:22:07,981 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:22:07,981 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:22:18,132 - INFO - App service started
+2024-03-20 20:23:26,815 - INFO - START SYSTEM
+2024-03-20 20:23:26,816 - INFO - App service started
+2024-03-20 20:23:26,819 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:23:26,819 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:23:45,355 - INFO - START SYSTEM
+2024-03-20 20:24:01,870 - INFO - START SYSTEM
+2024-03-20 20:24:01,871 - INFO - App service started
+2024-03-20 20:27:39,896 - INFO - START SYSTEM
+2024-03-20 20:27:39,896 - INFO - App service started
+2024-03-20 20:27:41,087 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:27:41,098 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:27:53,868 - INFO - START SYSTEM
+2024-03-20 20:27:53,869 - INFO - App service started
+2024-03-20 20:27:55,090 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:27:55,101 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:28:41,656 - INFO - 127.0.0.1 - - [20/Mar/2024 20:28:41] "[35m[1mGET /set HTTP/1.1[0m" 500 -
+2024-03-20 20:29:32,037 - INFO - START SYSTEM
+2024-03-20 20:29:32,037 - INFO - App service started
+2024-03-20 20:29:33,294 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-20 20:29:33,305 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-20 20:29:43,879 - INFO - 127.0.0.1 - - [20/Mar/2024 20:29:43] "GET /set HTTP/1.1" 200 -

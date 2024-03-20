@@ -12,3 +12,6 @@ class PlateNumberRepository(ABC):
     def update_plate_number(self,plate_number_list: List[str]) -> None:
         pass    
     
+    @abstractmethod
+    def clear_all(self) -> None:
+        pass
