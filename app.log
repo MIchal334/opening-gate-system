@@ -180,3 +180,52 @@
 2024-03-20 20:46:32,057 - INFO - 127.0.0.1 - - [20/Mar/2024 20:46:32] "PUT /set HTTP/1.1" 200 -
 2024-03-20 20:46:34,564 - INFO - Get plate list : ['XYZ789', 'DEF456']
 2024-03-20 20:46:34,575 - INFO - 127.0.0.1 - - [20/Mar/2024 20:46:34] "GET /set HTTP/1.1" 200 -
+2024-03-29 22:33:47,319 - INFO - START SYSTEM
+2024-03-29 22:33:47,320 - INFO - App service started
+2024-03-29 22:33:47,423 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-29 22:33:47,424 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-29 22:34:27,749 - INFO - START SYSTEM
+2024-03-29 22:34:27,750 - INFO - App service started
+2024-03-29 22:34:27,750 - INFO - Run car handler
+2024-03-29 22:34:27,849 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-29 22:34:27,849 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-29 22:35:03,648 - INFO - START SYSTEM
+2024-03-29 22:35:03,649 - INFO - App service started
+2024-03-29 22:35:03,649 - INFO - Run car handler
+2024-03-29 22:35:26,439 - INFO - START SYSTEM
+2024-03-29 22:35:26,440 - INFO - App service started
+2024-03-29 22:35:26,440 - INFO - Run car handler
+2024-03-29 22:35:26,440 - DEBUG - Start indor loop
+2024-03-29 22:35:26,441 - DEBUG - Start outdoor loop
+2024-03-29 22:35:47,026 - INFO - START SYSTEM
+2024-03-29 22:35:47,027 - INFO - App service started
+2024-03-29 22:35:47,027 - INFO - Run car handler
+2024-03-29 22:35:47,028 - DEBUG - Start indor loop
+2024-03-29 22:35:47,028 - DEBUG - Start outdoor loop
+2024-03-29 22:35:47,032 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-03-29 22:35:47,032 - INFO - [33mPress CTRL+C to quit[0m
+2024-03-29 22:35:49,030 - DEBUG - End indor loop. Time 2.002065658569336 s 
+2024-03-29 22:35:49,031 - DEBUG - Start indor loop
+2024-03-29 22:35:50,032 - DEBUG - End outdoor loop. Time 3.00315523147583 s 
+2024-03-29 22:35:50,032 - DEBUG - Start outdoor loop
+2024-03-29 22:35:51,034 - DEBUG - End indor loop. Time 2.0017850399017334 s 
+2024-03-29 22:35:51,034 - DEBUG - Start indor loop
+2024-03-29 22:35:53,033 - DEBUG - End outdoor loop. Time 3.001006603240967 s 
+2024-03-29 22:35:53,034 - DEBUG - Start outdoor loop
+2024-03-29 22:35:53,036 - DEBUG - End indor loop. Time 2.0010509490966797 s 
+2024-03-29 22:35:53,036 - DEBUG - Start indor loop
+2024-03-29 22:35:55,038 - DEBUG - End indor loop. Time 2.0006103515625 s 
+2024-03-29 22:35:55,038 - DEBUG - Start indor loop
+2024-03-29 22:35:56,036 - DEBUG - End outdoor loop. Time 3.00158953666687 s 
+2024-03-29 22:35:56,037 - DEBUG - Start outdoor loop
+2024-03-29 22:35:57,040 - DEBUG - End indor loop. Time 2.001513957977295 s 
+2024-03-29 22:35:57,041 - DEBUG - Start indor loop
+2024-03-29 22:35:59,040 - DEBUG - End outdoor loop. Time 3.002906084060669 s 
+2024-03-29 22:35:59,040 - DEBUG - Start outdoor loop
+2024-03-29 22:35:59,043 - DEBUG - End indor loop. Time 2.0020525455474854 s 
+2024-03-29 22:35:59,043 - DEBUG - Start indor loop
+2024-03-29 22:36:01,044 - DEBUG - End indor loop. Time 2.0005943775177 s 
+2024-03-29 22:36:01,045 - DEBUG - Start indor loop

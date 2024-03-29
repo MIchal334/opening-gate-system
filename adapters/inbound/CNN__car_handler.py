@@ -9,7 +9,8 @@ class CNNCarHandler(CarHandler):
         self.model = None
 
     def start_cnn(self):
-        self.model = load_model(self.cnn_path)
+        # self.model = load_model(self.cnn_path)
+        pass
 
     def chek_if_car_on_image(self, image: 'numpy.ndarray') -> bool:
         pass
