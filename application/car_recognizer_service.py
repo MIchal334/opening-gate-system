@@ -12,4 +12,4 @@ class CarRecognizerService(metaclass=SingletonMeta):
         self.car_handler = car_handler
         
     def is_car_on_image(self, image: 'numpy.ndarray') -> bool:
-        return self.car_handler.chek_if_car_on_image()
+        return self.car_handler.chek_if_car_on_image(image)

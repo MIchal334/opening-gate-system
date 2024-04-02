@@ -7,4 +7,7 @@ INDOOR_CAMERA_PASSWORD = 'Admin1234'
 INDOOR_CAMERA_IP = '192.168.0.216/11'
 
 
-CAR_REGOGNIZE_CNN_PATH = ''
+CAR_REGOGNIZE_CNN_PATH = '/home/michalm/Desktop/POC_GATE/sieci/car_recognize_model.keras'
+
+
+INDOR_TEST_LINK  = '/home/michalm/Desktop/POC_GATE/wyjazd.mp4'

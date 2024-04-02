@@ -12,19 +12,22 @@ def run_app_service():
     flask_thread.start()
 
 
-def run_car_handler():
-    get_car_handler().start_cnn()
+# def run_car_handler():
+#     get_car_handler().start_cnn()
 
 def get_frame_handler_outdoor_camera() -> FrameHandler:
     return CameraFrameHandler(__get_camera_link(OUTDOOR_CAMERA_USER,
                                                 OUTDOOR_CAMERA_PASSWORD,
                                                 OUTDOOR_CAMERA_IP))
 
-def get_frame_handler_indoor_camera() -> FrameHandler:
-    return CameraFrameHandler(__get_camera_link(INDOOR_CAMERA_USER, 
-                                                INDOOR_CAMERA_PASSWORD, 
-                                                INDOOR_CAMERA_IP))
+# def get_frame_handler_indoor_camera() -> FrameHandler:
+#     return CameraFrameHandler(__get_camera_link(INDOOR_CAMERA_USER, 
+#                                                 INDOOR_CAMERA_PASSWORD, 
+#                                                 INDOOR_CAMERA_IP))
 
+
+def get_frame_handler_indoor_camera() -> FrameHandler:
+    return CameraFrameHandler(INDOR_TEST_LINK)
 
 def get_car_handler() -> CarHandler:
     return CNNCarHandler(CAR_REGOGNIZE_CNN_PATH)
