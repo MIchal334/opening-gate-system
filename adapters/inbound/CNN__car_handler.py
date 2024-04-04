@@ -1,4 +1,5 @@
 import logging
+import threading
 from application.ports.inbound.car_handler import CarHandler
 import numpy
 from keras.models import load_model
@@ -18,7 +19,7 @@ class CNNCarHandler(CarHandler):
 
     def start_cnn(self):
         self.model = load_model(self.cnn_path)
-        logger.info('START CNN CAR HANDLER')
+        logger.info(f'START CNN CAR HANDLER {threading.current_thread().getName()}')
 
 
     def chek_if_car_on_image(self, image: 'numpy.ndarray') -> bool:
