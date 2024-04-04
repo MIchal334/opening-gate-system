@@ -9,9 +9,11 @@ logger = logging.getLogger()
 
 class CNNCarHandler(CarHandler):
 
-    def __init__(self, cnn_path: str) -> None:
+    def __init__(self, cnn_path: str, frame_x_size: int, frame_y_size: int) -> None:
         self.cnn_path = cnn_path
         self.model = None
+        self.frame_x_size = frame_x_size
+        self.frame_y_size = frame_y_size
         self.start_cnn()
 
     def start_cnn(self):
@@ -29,9 +31,7 @@ class CNNCarHandler(CarHandler):
 
 
     def __preapre_image_for_proccesing(self,img):
-        x_size = 64
-        y_size = 64
-        image = cv2.resize(img, (x_size, y_size))
+        image = cv2.resize(img,(self.frame_x_size,self.frame_y_size))
         image = image[np.newaxis, ...]
         image = np.expand_dims(image, axis=-1)
         return image.astype('float32')/255

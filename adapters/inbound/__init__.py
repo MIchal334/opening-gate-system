@@ -26,7 +26,7 @@ def get_frame_handler_indoor_camera() -> FrameHandler:
     return CameraFrameHandler(INDOR_TEST_LINK)
 
 def get_car_handler() -> CarHandler:
-    return CNNCarHandler(CAR_REGOGNIZE_CNN_PATH)
+    return CNNCarHandler(CAR_REGOGNIZE_CNN_PATH, CAR_REGOGNIZE_CNN_FRAME_X_SIZE,CAR_REGOGNIZE_CNN_FRAME_Y_SIZE)
 
 def __run_flask():
     app.run(debug=True, port=5000, use_reloader = False)

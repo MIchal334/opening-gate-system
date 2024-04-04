@@ -16,14 +16,11 @@ def set_up():
     logging.info('START SYSTEM')
     run_app_service()
     logging.info('App service started')
-    # run_car_handler()
-    # logging.info('Run car handler')
 
 
 
 if __name__ == "__main__":
     set_up()
-    time.sleep(2)
     indoor_thread = threading.Thread(target=get_facade().indoor_main_loop, daemon=True)
     outdoor_thread = threading.Thread(target=get_facade().outdoor_main_loop, daemon=False)
     indoor_thread.start()
