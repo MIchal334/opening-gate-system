@@ -2,8 +2,12 @@ import threading
 from adapters.inbound.controller import app
 from application.ports.inbound.frame_handler import FrameHandler
 from adapters.inbound.camera_frame_handler import CameraFrameHandler
-from application.ports.inbound.car_handler import CarHandler
+from application.ports.inbound.car_detenction_handler import CarHandler
 from adapters.inbound.CNN__car_handler import CNNCarHandler
+from application.ports.inbound.plate_detection_handler import PlateDetectionHandler
+from adapters.inbound.CNN_plate_detection_handler import CNNPlateDetectionHandler
+from application.ports.inbound.plate_number_reader import PlateNumberReader
+from adapters.inbound.OCR_plate_number_reader import OCRPlateNumberReader
 from common.cofiguration import *
 
 
@@ -26,7 +30,13 @@ def get_frame_handler_indoor_camera() -> FrameHandler:
     return CameraFrameHandler(INDOR_TEST_LINK)
 
 def get_car_handler() -> CarHandler:
-    return CNNCarHandler(CAR_REGOGNIZE_CNN_PATH, CAR_REGOGNIZE_CNN_FRAME_X_SIZE,CAR_REGOGNIZE_CNN_FRAME_Y_SIZE)
+    return CNNCarHandler(CAR_REGOGNIZE_CNN_MODEL_PATH, CAR_REGOGNIZE_CNN_FRAME_X_SIZE,CAR_REGOGNIZE_CNN_FRAME_Y_SIZE)
+
+def get_plate_detection_handler() -> PlateDetectionHandler:
+    return CNNPlateDetectionHandler()
+
+def get_plate_number_reader() -> PlateNumberReader:
+    return OCRPlateNumberReader()
 
 def __run_flask():
     app.run(debug=True, port=5000, use_reloader = False)
