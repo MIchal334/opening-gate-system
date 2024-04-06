@@ -10,7 +10,7 @@ INDOOR_CAMERA_IP = '192.168.0.216/11'
 
 
 #car regognize cnn config
-CAR_REGOGNIZE_CNN_PATH = '/home/michalm/Desktop/POC_GATE/sieci/car_recognize_model.keras'
+CAR_REGOGNIZE_CNN_MODEL_PATH = '/home/michalm/Desktop/POC_GATE/sieci/car_recognize_model.keras'
 CAR_REGOGNIZE_CNN_FRAME_X_SIZE = 64
 CAR_REGOGNIZE_CNN_FRAME_Y_SIZE = 64
 

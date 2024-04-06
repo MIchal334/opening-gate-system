@@ -20,7 +20,6 @@ screnn_size_y = 1080
 m_x = screnn_size_x/x_size
 m_y = screnn_size_y/y_size
 
-
 def find_car(network):
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
@@ -70,6 +69,8 @@ def draw_squer(frame, bounding_box):
     p2 = (int(bounding_box[2]*x_size*m_x), int(bounding_box[1]*y_size*m_y))
     p3 = (int(bounding_box[2]*x_size*m_x), int(bounding_box[3]*y_size*m_y))
     p4 = (int(bounding_box[0]*x_size*m_x), int(bounding_box[3]*y_size*m_y))
+    area =  (x_size*(bounding_box[2] - bounding_box[0])) *  (y_size*(bounding_box[3] - bounding_box[1]))
+    print(f'AREA {area}')
     cv2.line(frame, p1, p4, color, thickness) 
     cv2.line(frame, p4, p3, color, thickness)
     cv2.line(frame, p3, p2, color, thickness)
