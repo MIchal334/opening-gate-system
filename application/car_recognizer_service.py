@@ -1,7 +1,7 @@
 
 import logging
 from adapters.inbound import get_car_handler
-from application.ports.inbound.car_handler import CarHandler
+from application.ports.inbound.car_detenction_handler import CarHandler
 from common.singleton import SingletonMeta
 import numpy
 

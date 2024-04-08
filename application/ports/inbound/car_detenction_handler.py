@@ -4,5 +4,5 @@ import numpy
 class CarHandler(ABC):
 
     @abstractmethod
-    def chek_if_car_on_image(self, image: 'numpy.ndarray') -> bool:
+    def check_if_car_on_image(self, image: 'numpy.ndarray') -> bool:
         pass

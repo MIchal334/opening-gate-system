@@ -12,13 +12,13 @@ class FrameService(metaclass=SingletonMeta):
         self.outdor_frame_handler = outdor_frame_handler
         self.indor_frame_handler = indor_frame_handler
         
-    def get_indor_frame(self) -> 'numpy.ndarray' | None :
+    def get_indoor_frame(self) -> 'numpy.ndarray' | None :
         frame = self.indor_frame_handler.get_frame()
         if frame is not None:
             return frame
         return None
     
-    def get_outdor_frame(self) -> 'numpy.ndarray' | None :
+    def get_outdoor_frame(self) -> 'numpy.ndarray' | None :
         frame = self.outdor_frame_handler.get_frame()
         if frame is not None:
             return frame

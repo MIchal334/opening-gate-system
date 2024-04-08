@@ -1,6 +1,6 @@
 import logging
 import threading
-from application.ports.inbound.car_handler import CarHandler
+from application.ports.inbound.car_detenction_handler import CarHandler
 import numpy
 from keras.models import load_model
 import cv2
