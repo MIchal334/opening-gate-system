@@ -15,5 +15,11 @@ CAR_REGOGNIZE_CNN_FRAME_X_SIZE = 64
 CAR_REGOGNIZE_CNN_FRAME_Y_SIZE = 64
 
 
+#car bb cnn config
+CAR_BB_CNN_MODEL_PATH = '/home/michalm/Desktop/POC_GATE/sieci/car_boxes_model'
+CAR_BB_CNN_FRAME_X_SIZE = 297
+CAR_BB_CNN_FRAME_Y_SIZE = 166
+
+
 #link for tests video
 INDOR_TEST_LINK  = '/home/michalm/Desktop/POC_GATE/wyjazd.mp4'

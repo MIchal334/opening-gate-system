@@ -22,10 +22,10 @@ def set_up():
 if __name__ == "__main__":
     set_up()
     facade = get_facade()
-    indoor_thread = threading.Thread(target=facade.indoor_main_loop, daemon=True, name="Indoor thred")
-    outdoor_thread = threading.Thread(target=facade.outdoor_main_loop, daemon=False,name="outdoor thred")
+    indoor_thread = threading.Thread(target=facade.indoor_main_loop, daemon=False, name="Indoor thred")
+    # outdoor_thread = threading.Thread(target=facade.outdoor_main_loop, daemon=False,name="outdoor thred")
     indoor_thread.start()
-    outdoor_thread.start()
+    # outdoor_thread.start()
 
 
     
