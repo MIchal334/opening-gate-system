@@ -22,14 +22,14 @@ def get_frame_handler_outdoor_camera() -> FrameHandler:
                                                 OUTDOOR_CAMERA_PASSWORD,
                                                 OUTDOOR_CAMERA_IP))
 
-# def get_frame_handler_indoor_camera() -> FrameHandler:
-#     return CameraFrameHandler(__get_camera_link(INDOOR_CAMERA_USER, 
-#                                                 INDOOR_CAMERA_PASSWORD, 
-#                                                 INDOOR_CAMERA_IP))
-
-
 def get_frame_handler_indoor_camera() -> FrameHandler:
-    return CameraFrameHandler(INDOR_TEST_LINK)
+    return CameraFrameHandler(__get_camera_link(INDOOR_CAMERA_USER, 
+                                                INDOOR_CAMERA_PASSWORD, 
+                                                INDOOR_CAMERA_IP))
+
+
+# def get_frame_handler_indoor_camera() -> FrameHandler:
+#     return CameraFrameHandler(INDOR_TEST_LINK)
 
 def get_detection_car_handler() -> CarHandler:
     return CNNCarHandler(CAR_REGOGNIZE_CNN_MODEL_PATH, CAR_REGOGNIZE_CNN_FRAME_X_SIZE,CAR_REGOGNIZE_CNN_FRAME_Y_SIZE)

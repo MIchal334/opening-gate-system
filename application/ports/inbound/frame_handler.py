@@ -9,3 +9,7 @@ class FrameHandler(ABC):
     @abstractmethod
     def get_frame(self) -> 'numpy.ndarray'|None:
         pass
+        
+    @abstractmethod
+    def start_handler(self):
+        pass

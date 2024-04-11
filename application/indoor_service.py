@@ -1,4 +1,4 @@
-
+import cv2
 import logging
 import time
 from adapters.inbound import get_car_bb_handler, get_detection_car_handler
@@ -31,13 +31,17 @@ class IndoorService(metaclass=SingletonMeta):
         self.trashold_for_all = 1900 # [px]
         self.min_area_value = 300 # [px]
         self.diffrent_percents_value = 0.25
+        # self.inc = 0
 
     
         
     def should_open_gate(self) -> bool:
         frame = self.frame_service.get_indoor_frame()
+       
         if(frame is not None):
-           if self.car_handler.check_if_car_on_image(frame):
+            # self.inc += 1
+            # cv2.imwrite(f'Klatka-{self.inc}.jpg', frame)
+            if self.car_handler.check_if_car_on_image(frame):
                logger.debug("CAR DETECTED")
                car_boxes = self.car_bb_handler.get_car_bb(frame)
                return self.__anlize_frame(car_boxes)
