@@ -1,5 +1,5 @@
 import threading
-from adapters.inbound.CNN_car_bb_handler import CNNCarBBnHandler
+from adapters.inbound.CNN_car_bb_handler import CNNCarBBHandler
 from adapters.inbound.controller import app
 from application.ports.inbound.car_bb_handler import CarBBHandler
 from application.ports.inbound.frame_handler import FrameHandler
@@ -31,12 +31,12 @@ def get_frame_handler_indoor_camera() -> FrameHandler:
 # def get_frame_handler_indoor_camera() -> FrameHandler:
 #     return CameraFrameHandler(INDOR_TEST_LINK)
 
-def get_detection_car_handler() -> CarHandler:
+def get_car_detection_handler() -> CarHandler:
     return CNNCarHandler(CAR_REGOGNIZE_CNN_MODEL_PATH, CAR_REGOGNIZE_CNN_FRAME_X_SIZE,CAR_REGOGNIZE_CNN_FRAME_Y_SIZE)
 
 
 def get_car_bb_handler() -> CarBBHandler:
-    return CNNCarBBnHandler(CAR_BB_CNN_MODEL_PATH, CAR_BB_CNN_FRAME_X_SIZE,CAR_BB_CNN_FRAME_Y_SIZE)
+    return CNNCarBBHandler(CAR_BB_CNN_MODEL_PATH, CAR_BB_CNN_FRAME_X_SIZE,CAR_BB_CNN_FRAME_Y_SIZE)
 
 
 def get_plate_detection_handler() -> PlateDetectionHandler:

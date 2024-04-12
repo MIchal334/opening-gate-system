@@ -8,16 +8,16 @@ import numpy as np
 
 logger = logging.getLogger()
 
-class CNNCarBBnHandler(CarBBHandler):
+class CNNCarBBHandler(CarBBHandler):
     def __init__(self,cnn_path,frame_x_size,frame_y_size):
         self.cnn_path = cnn_path
         self.model = None
         self.frame_x_size = frame_x_size
         self.frame_y_size = frame_y_size
-        self.start_cnn()
+        self.start_cnn_carBB()
 
 
-    def start_cnn(self):
+    def start_cnn_carBB(self):
         self.model = load_model(self.cnn_path)
         logger.info(f'START CNN CAR BB HANDLER {threading.current_thread().getName()}')
 

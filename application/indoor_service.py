@@ -1,7 +1,7 @@
 import cv2
 import logging
 import time
-from adapters.inbound import get_car_bb_handler, get_detection_car_handler
+from adapters.inbound import get_car_bb_handler, get_car_detection_handler
 from application.frame_service import FrameService, get_frame_service
 from application.ports.inbound.car_bb_handler import CarBBHandler
 from application.ports.inbound.car_detenction_handler import CarHandler
@@ -11,7 +11,7 @@ import numpy
 logger = logging.getLogger()
 
 def get_indoor_service():
-    return IndoorService(get_detection_car_handler()
+    return IndoorService(get_car_detection_handler()
                          ,get_frame_service()
                          ,get_car_bb_handler())
 
