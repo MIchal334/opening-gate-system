@@ -1,5 +1,7 @@
 import threading
+from adapters.inbound.CNN_car_bb_handler import CNNCarBBHandler
 from adapters.inbound.controller import app
+from application.ports.inbound.car_bb_handler import CarBBHandler
 from application.ports.inbound.frame_handler import FrameHandler
 from adapters.inbound.camera_frame_handler import CameraFrameHandler
 from application.ports.inbound.car_detenction_handler import CarHandler
@@ -20,17 +22,22 @@ def get_frame_handler_outdoor_camera() -> FrameHandler:
                                                 OUTDOOR_CAMERA_PASSWORD,
                                                 OUTDOOR_CAMERA_IP))
 
-# def get_frame_handler_indoor_camera() -> FrameHandler:
-#     return CameraFrameHandler(__get_camera_link(INDOOR_CAMERA_USER, 
-#                                                 INDOOR_CAMERA_PASSWORD, 
-#                                                 INDOOR_CAMERA_IP))
-
-
 def get_frame_handler_indoor_camera() -> FrameHandler:
-    return CameraFrameHandler(INDOR_TEST_LINK)
+    return CameraFrameHandler(__get_camera_link(INDOOR_CAMERA_USER, 
+                                                INDOOR_CAMERA_PASSWORD, 
+                                                INDOOR_CAMERA_IP))
 
-def get_car_handler() -> CarHandler:
+
+# def get_frame_handler_indoor_camera() -> FrameHandler:
+#     return CameraFrameHandler(INDOR_TEST_LINK)
+
+def get_car_detection_handler() -> CarHandler:
     return CNNCarHandler(CAR_REGOGNIZE_CNN_MODEL_PATH, CAR_REGOGNIZE_CNN_FRAME_X_SIZE,CAR_REGOGNIZE_CNN_FRAME_Y_SIZE)
+
+
+def get_car_bb_handler() -> CarBBHandler:
+    return CNNCarBBHandler(CAR_BB_CNN_MODEL_PATH, CAR_BB_CNN_FRAME_X_SIZE,CAR_BB_CNN_FRAME_Y_SIZE)
+
 
 def get_plate_detection_handler() -> PlateDetectionHandler:
     return CNNPlateDetectionHandler()
