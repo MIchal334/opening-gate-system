@@ -22,7 +22,7 @@ class CNNCarHandler(CarHandler):
         logger.info(f'START CNN CAR HANDLER {threading.current_thread().getName()}')
 
 
-    def chek_if_car_on_image(self, image: 'numpy.ndarray') -> bool:
+    def check_if_car_on_image(self, image: 'numpy.ndarray') -> bool:
         image_prepared = self.__preapre_image_for_proccesing(image)
         result = self.model.predict(image_prepared)
         class_max = np.argmax(result)

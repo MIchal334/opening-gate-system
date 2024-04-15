@@ -1,4 +1,5 @@
 import os
+import time
 import keras
 from keras.models import load_model
 import cv2
@@ -8,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import numpy as np
+import time
 
  
 path_to_test_dictionary = '/home/michalm/Desktop/auto_test'
@@ -29,12 +31,15 @@ def find_car(network):
    
     i = 0 
     j = 0
+    last_time = time.time()
+    DELAY_SECONDS = 0.2
+    frames = []
     while cap.isOpened():
         ret, frame = cap.read()
         if not ret:
             print("Nie udało się odczytać klatki wideo. Koniec strumienia.")
             break
-
+        
         print(f'FRAME SIZE {frame.shape}')
         image_prepared = __preapre_image_for_proccesing(frame)
         result = network.predict(image_prepared)
@@ -45,8 +50,15 @@ def find_car(network):
         #     i += 1
 
         # j+=1
-        # frame = cv2.resize(frame, (x_size, y_size))   
-        cv2.imshow('Klatka', frame)  # Wyświetl klatkę
+        # frame = cv2.resize(frame, (x_size, y_size))
+        frames.append(frame)
+          # Wyświetl klatkę
+        
+        
+        if time.time() - last_time > DELAY_SECONDS:
+            cv2.imshow('Klatka', frames[-1])
+            last_time = time.time()
+        
         if cv2.waitKey(25) & 0xFF == ord('q'):  # Naciśnij 'q', aby zakończyć
             break
     cap.release()
