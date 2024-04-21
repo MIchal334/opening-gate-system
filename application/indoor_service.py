@@ -1,25 +1,18 @@
 import cv2
 import logging
 import time
-from adapters.inbound import get_car_bb_handler, get_car_detection_handler
-from application.frame_service import FrameService, get_frame_service
+from application.frame_service import FrameService
 from application.ports.inbound.car_bb_handler import CarBBHandler
 from application.ports.inbound.car_detenction_handler import CarHandler
 from common.singleton import SingletonMeta
-import numpy
 
 logger = logging.getLogger()
-
-def get_indoor_service():
-    return IndoorService(get_car_detection_handler()
-                         ,get_frame_service()
-                         ,get_car_bb_handler())
 
 class IndoorService(metaclass=SingletonMeta):
     def __init__(self, car_handler: CarHandler,
                 frame_service: FrameService, 
                 car_bb_handler: CarBBHandler) -> None:
-        logger.info('CRATED CAR SERVICE')
+        logger.info('CRATED INDOOR SERVICE')
         self.car_handler = car_handler
         self.frame_service  = frame_service
         self.car_bb_handler = car_bb_handler

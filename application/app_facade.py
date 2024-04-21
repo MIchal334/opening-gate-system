@@ -1,13 +1,12 @@
 import logging
 import time
-from application.frame_service import FrameService, get_frame_service
-from application.indoor_service import IndoorService, get_indoor_service
-from application.outdoor_service import get_outdoor_service, OutdoorService
+
+from application.indoor_service import IndoorService
+from application.outdoor_service import OutdoorService
+
 
 logger = logging.getLogger()
 
-def get_facade():
-    return AppFacade(get_outdoor_service(),get_indoor_service())
 
 class AppFacade():
     
@@ -20,12 +19,12 @@ class AppFacade():
 
     def indoor_main_loop(self):
         while True:
-            logger.info('Start indor loop')
+            logger.info('Start indoor loop')
             start_time = time.time()
             if self.indoor_service.should_open_gate():
                 logger.info("OPEN GET")
                 break
-            logger.info(f'End indor loop. Time {time.time() - start_time} s ')
+            logger.info(f'End indoor loop. Time {time.time() - start_time} s ')
 
     def outdoor_main_loop(self):
         while True:
