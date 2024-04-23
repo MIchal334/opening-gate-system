@@ -4,10 +4,13 @@ from adapters.inbound.CNN_car_bb_handler import CNNCarBBHandler
 from adapters.inbound.CNN_plate_detection_handler import CNNPlateDetectionHandler
 from adapters.inbound.OCR_plate_number_reader import OCRPlateNumberReader
 from adapters.inbound.camera_frame_handler import CameraFrameHandler
+from adapters.inbound.rasberry_gate_oppener import RassberryGateOpenner
 from adapters.outbound.memory_plate_number_repository import MemoryPlateNumberRepository
 from application.app_facade import AppFacade
+from application.gate_open_service import GateOpenService
 from application.outdoor_service import OutdoorService
 from application.ports.inbound.car_bb_handler import CarBBHandler
+from application.ports.inbound.gate_oppener import GateOppener
 from application.ports.inbound.plate_detection_handler import PlateDetectionHandler
 from application.ports.inbound.plate_number_reader import PlateNumberReader
 from application.ports.outbound.plate_data_repo import PlateNumberRepository
@@ -53,7 +56,14 @@ def bootstrap_di() -> None:
     indoor_service = IndoorService(car_handler,frame_service,car_bb_handler)
     kink.di[IndoorService]  = indoor_service
 
-    facade = AppFacade(outdoor_service,indoor_service)
+    gate_oppener =  RassberryGateOpenner(PIN_NUMBER,OPENING_TIME)
+    kink.di[GateOppener]  = gate_oppener
+
+    gate_open_service = GateOpenService(IDLE_TIME)
+    kink.di[GateOpenService] = gate_open_service
+
+
+    facade = AppFacade(outdoor_service,indoor_service,gate_open_service)
     kink.di[AppFacade] = facade
 
 

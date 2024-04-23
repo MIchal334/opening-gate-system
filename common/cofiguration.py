@@ -23,3 +23,9 @@ CAR_BB_CNN_FRAME_Y_SIZE = 166
 
 #link for tests video
 INDOOR_TEST_LINK  = '/home/michalm/Desktop/POC_GATE/wyjazd.mp4'
+
+
+#opeing values
+IDLE_TIME = 90 #[s]
+OPENING_TIME = 3 #[s]
+PIN_NUMBER = 6
