@@ -2,20 +2,12 @@ import numpy
 from common.singleton import SingletonMeta
 from application.ports.inbound.plate_detection_handler import PlateDetectionHandler
 from application.ports.inbound.plate_number_reader import PlateNumberReader
-from adapters.inbound import get_plate_detection_handler, get_plate_number_reader
-from application.frame_service import get_frame_service, FrameService
-from adapters.outbound import get_plate_repository
+from application.frame_service import FrameService
 from application.ports.outbound.plate_data_repo import PlateNumberRepository
 import logging
 
 
 logger = logging.getLogger()
-
-def get_outdoor_service():
-    return OutdoorService(get_plate_detection_handler(),
-                          get_frame_service(),
-                          get_plate_number_reader(),
-                          get_plate_repository())
 
 class OutdoorService(metaclass=SingletonMeta):
     def __init__(self,

@@ -13,7 +13,7 @@ import time
 
  
 path_to_test_dictionary = '/home/michalm/Desktop/auto_test'
-video_path = '/home/michalm/Desktop/POC_GATE/wyjazd.mp4'
+video_path = '/home/michalm/Desktop/POC_GATE/wjazd.mp4'
 
 x_size = 297
 y_size = 166
@@ -32,7 +32,7 @@ def find_car(network):
     i = 0 
     j = 0
     last_time = time.time()
-    DELAY_SECONDS = 0.2
+    DELAY_SECONDS = 0.05
     frames = []
     while cap.isOpened():
         ret, frame = cap.read()
@@ -77,10 +77,10 @@ def show_test_set(network):
 def draw_squer(frame, bounding_box):
     color = (255, 0, 0) 
     thickness = 2  
-    p1 = (int(bounding_box[0]*x_size*m_x), int(bounding_box[1]*y_size*m_y))
-    p2 = (int(bounding_box[2]*x_size*m_x), int(bounding_box[1]*y_size*m_y))
-    p3 = (int(bounding_box[2]*x_size*m_x), int(bounding_box[3]*y_size*m_y))
-    p4 = (int(bounding_box[0]*x_size*m_x), int(bounding_box[3]*y_size*m_y))
+    p1 = (int(bounding_box[0]*screnn_size_x), int(bounding_box[1]*screnn_size_y))
+    p2 = (int(bounding_box[2]*screnn_size_x), int(bounding_box[1]*screnn_size_y))
+    p3 = (int(bounding_box[2]*screnn_size_x), int(bounding_box[3]*screnn_size_y))
+    p4 = (int(bounding_box[0]*screnn_size_x), int(bounding_box[3]*screnn_size_y))
     area =  (x_size*(bounding_box[2] - bounding_box[0])) *  (y_size*(bounding_box[3] - bounding_box[1]))
     print(f'AREA {area}')
     cv2.line(frame, p1, p4, color, thickness) 
@@ -118,6 +118,6 @@ def draw_squer_mat(bounding_box,img):
 
 
 if __name__ == "__main__":
-    network = load_model('/home/michalm/Desktop/POC_GATE/sieci/car_boxes_model.keras')
+    network = load_model('/home/michalm/Desktop/POC_GATE/sieci/plate_boxes_model.keras')
     find_car(network)
     # show_test_set(network)

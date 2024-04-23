@@ -22,4 +22,4 @@ CAR_BB_CNN_FRAME_Y_SIZE = 166
 
 
 #link for tests video
-INDOR_TEST_LINK  = '/home/michalm/Desktop/POC_GATE/wyjazd.mp4'
+INDOOR_TEST_LINK  = '/home/michalm/Desktop/POC_GATE/wyjazd.mp4'
