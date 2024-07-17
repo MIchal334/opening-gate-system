@@ -22,7 +22,7 @@ screnn_size_y = 1080
 m_x = screnn_size_x/x_size
 m_y = screnn_size_y/y_size
 
-def find_car(network):
+def find_plate(network):
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
         print("Błąd: Nie udało się otworzyć pliku wideo.")
@@ -119,5 +119,5 @@ def draw_squer_mat(bounding_box,img):
 
 if __name__ == "__main__":
     network = load_model('/home/michalm/Desktop/POC_GATE/sieci/plate_boxes_model.keras')
-    find_car(network)
+    find_plate(network)
     # show_test_set(network)
