@@ -1,5 +1,4 @@
-# opening gate system
-# Automatic Gate Opening System
+# Opening gate system
 
 ## Overview
 
